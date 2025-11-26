@@ -1,0 +1,1 @@
+A collection of theoretical or under-explored games. Full code will be available by the end of this week.
