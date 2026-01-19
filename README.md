@@ -1,1 +1,3 @@
-A collection of theoretical or under-explored games. Full code will be available by the end of this week.
+A collection of theoretical or under-explored games. 
+
+Currently includes the E-Mail Game from C. Camerer's "Behavioral Game Theory" (2003).
