@@ -1,0 +1,19 @@
+{{ block title }}
+    Introduction
+{{ endblock }}
+{{ block content }}
+
+In this game, you will be paired with another player. You are both army generals on the same team. Your goal is to coordinate an attack on the enemy, who is located either at location A or B.
+There are two states of the world: M1 and M2. M1 is realized with probability 0.2, and M2 is realized with probability 0.8.
+
+If the state is M1, you face the following matrix:
+
+If the state is M2, you face the following matrix:
+
+Only player 1 knows which state is realized. If the state is M1, then player 1 does not send any messages.
+If the state is M2, then player 1 can send a message to player 2, informing them of the state.
+Any message sent between both players is intercepted with probability 0.8.
+
+    {{ next_button }}
+
+{{ endblock }}

@@ -1,0 +1,30 @@
+{{ block title }}
+{{ endblock }}
+
+{{ block content }}
+You have been matched with a new player. Your role is the same. 
+
+{{ if player.role == "receiver" }}
+Your role is receiver. You will not know the state that was realized for sure. Please proceed.
+{{ next_button }}
+{{ endif }}
+
+{{ if player.role == "informant" }}
+The realized state is {{ group.realized_state }}. 
+    {{ if group.realized_state == "S1" }}
+    You do not have the opportunity to inform your partner of the state. Please proceed. 
+    {{ next_button }}
+
+    {{ endif}}
+
+    {{ if group.realized_state == "S2" }}
+    You now have the opportunity to send a message to your partner informing them of this.
+    Remember, there is a 20 percent chance that your message gets intercepted and your partner never receives your message. 
+    If your partner receives your message, there is an 80 percent chance that their confirmation of receipt successfully reaches you. 
+
+    {{ next_button }}
+    {{ endif }}
+    
+{{ endif }}
+
+{{ endblock }}
